@@ -1,20 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-html, body, .container {
+html,
+body,
+.container {
   height: 100%;
-  font-family: 'Kaushan Script','Sail', cursive;
+  font-family: "Kaushan Script", "Sail", cursive;
 }
 
 body {
   background: #e74;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
-  background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
+  background-image: linear-gradient(
+    to bottom,
+    #190e14,
+    #0d0d4b 30%,
+    #c76075 80%,
+    #e9b64b 95%
+  );
+  background-image: radial-gradient(
+    circle at center bottom,
+    #e9b64b,
+    #c76075 15%,
+    #0d0d4b 75%,
+    #190e14 90%
+  );
 }
-.text{
-  color:#fff;
+.text {
+  color: #fff;
   /* position: absolute;
   right: 243px;
   bottom: 200px; */
+}
+.wish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wish > p {
+  width: 200px;
+  color: #fff;
+  text-align: center;
 }
 div#beach,
 canvas#canvas {
@@ -75,7 +99,7 @@ div#sea {
   bottom: 0px;
   top: 0px;
   background-color: #d44;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .giftbox {
@@ -91,7 +115,8 @@ div#sea {
   background: #34495e;
   position: absolute;
 }
-.giftbox > div:after, .giftbox > div:before {
+.giftbox > div:after,
+.giftbox > div:before {
   position: absolute;
   content: "";
   top: 0;
@@ -131,7 +156,8 @@ div#sea {
   top: -50px;
   transform: translateX(-50%);
 }
-.giftbox .cover > div:before, .giftbox .cover > div:after {
+.giftbox .cover > div:before,
+.giftbox .cover > div:after {
   position: absolute;
   left: 0;
   top: 0;
@@ -169,7 +195,7 @@ div#sea {
 
 .icons {
   position: absolute;
-  top:50px;
+  top: 50px;
   left: 10px;
   /*top:50%;
   width: 100%;*/
@@ -193,7 +219,7 @@ div#sea {
   animation: wobble 0.5s linear infinite forwards;
 }
 .step-1 .cover {
-  animation: wobble 0.5s linear infinite  0.1s forwards;
+  animation: wobble 0.5s linear infinite 0.1s forwards;
 }
 .step-1 .icons .row span {
   opacity: 1;
@@ -362,27 +388,37 @@ div#sea {
   transition-delay: 0.65s;
 }
 
-.step-2 .icons span, .step-3 .icons span, .step-4 .icons span {
+.step-2 .icons span,
+.step-3 .icons span,
+.step-4 .icons span {
   opacity: 1;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 0.91);
 }
 
-.step-4 .icons .row span, .step-3 .icons .row span {
+.step-4 .icons .row span,
+.step-3 .icons .row span {
   /*animation: wobble 0.6s linear infinite forwards;*/
   color: #c6e2ff;
-  animation: neon .08s ease-in-out infinite alternate;
+  animation: neon 0.08s ease-in-out infinite alternate;
 }
 
-.step-4 .icons .row span:nth-child(even), .step-3 .icons .row span:nth-child(even) {
+.step-4 .icons .row span:nth-child(even),
+.step-3 .icons .row span:nth-child(even) {
   animation-duration: 0.7s;
 }
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
   }
   to {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px #1e84f2;
   }
 }
 .moon {
@@ -461,5 +497,9 @@ div#sea {
   .moon {
     right: 230px;
   }
+  .wish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
