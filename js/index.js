@@ -315,7 +315,10 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "/video/hbdpreet.mp4");
+  ifrm.setAttribute(
+    "src",
+    "https://www.youtube.com/embed/RRps-FE0Gvo?controls=0&loop=1&autoplay=1"
+  );
   //ifrm.style.width = `${w}px`;
   //ifrm.style.height = `${h}px`;
   ifrm.style.border = "none";
